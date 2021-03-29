@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DetailView from './DetailView';
 import PokeList from './PokeList'
 import './styles/App.css'
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className = "App">
       <PokeList />
+      <DetailView />
       </div>
     );
   }
