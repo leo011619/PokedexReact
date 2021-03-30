@@ -18,7 +18,7 @@ class App extends Component {
   handleOnClick(id) {
     fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`).then(res => res.json()).then(data => {
         const pokemon = new Pokemon(data);
-
+        console.log(data);
         this.setState({ pokemon });
       })
       .catch(err => console.log(err));
