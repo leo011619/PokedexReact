@@ -7,7 +7,14 @@ class Pokemon {
       this.height = data.height;
       this.weight = data.weight;
       this.ability0 = data.abilities[0].ability.name;
+      // if (data.abilities[1]){
+      // this.ability1 = data.abilities[1].ability.name;}
+
+      // this.ability1 = data.abilities[1]?.ability.name;
+
+      // if(data.abilities.length > 1)  this.ability1 = data.abilities[1].ability.name;
       
+      if(data.abilities.length > 1)  this.ability1 = data.abilities[1].ability.name;
 
       
       
